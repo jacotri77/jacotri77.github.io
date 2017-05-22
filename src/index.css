@@ -1,0 +1,213 @@
+html {
+  box-sizing: border-box;
+}
+
+{
+  box-sizing: inherit;
+
+}
+@import url('https://fonts.googleapis.com/css?family=Quattrocento+Sans|Titillium+Web');
+
+body{
+  background-image: linear-gradient(to bottom, rgba(13,18,40, .90) 0%,rgba(13,18,40, .90)0%),url('../images/serge-kutuzov-220100.jpg');
+  background-repeat: no-repeat;
+  font-family: 'Quattrocento Sans', sans-serif;
+}
+
+#headerCont{
+  width:90%;
+  height: 100px;
+  margin:auto;
+  border: 2px solid white;
+  
+}
+
+.social {
+  float: right;
+  width: 25%;
+  margin-left: 60px;
+  height: 80px;
+  line-height: 100px;
+}
+
+.fa {
+  margin: 0 10px;
+  color: white;
+}
+
+h1{
+  color:white;
+  text-align: left;
+  padding-left: 15px;
+  font-weight: normal;
+  float: left;
+  font-size: 56px;
+  height:80px;
+  width: 65%;
+  margin: 20px auto;
+}
+
+#interiorDivImg{
+
+  width: 100%;
+	height:880px;
+  margin: auto;
+  overflow: hidden;
+  align-content: center;
+	
+}
+.interiorDiv{
+  display: block;
+  clear: both;
+	margin: 20px auto;
+  width:90%;
+
+  
+
+}
+
+#pictBox{
+
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 250px;
+  margin: 25px 0px;
+}
+
+#appContainer{
+
+	height:1780px;
+	width:1280px;
+	margin:auto;
+}
+
+
+#boxOne, #boxTwo, #boxThree{
+
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+  height:230px;
+  width: 31%;
+  overflow: hidden;
+  margin: auto;
+  background-color: white;
+
+}
+#boxOne img, #boxTwo img, #boxThree img{
+  margin: auto;
+
+}
+
+#boxOne{
+
+  margin-left: 0px;
+}
+
+#boxThree{
+
+  margin-right: 0px;
+
+}
+form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 450px;
+  width: 100%;
+  margin: 0px auto 0px auto;
+  font-weight: normal;
+  font-size: 18px;
+  color: white;
+  border: 2px solid white;
+  
+}
+
+form label{
+
+  color:white;
+  margin-bottom: 0px;
+}
+
+form input[type='text'], form input[type='email']{
+
+  height: 35px;
+  font-size: 18px;
+  width: 400px;
+  margin:10px 0px 15px 0px;
+  
+}
+
+#formH{
+
+  display: block;
+  text-align: center;
+  margin: 0px;
+  height: 60px;
+  line-height: 60px;
+  width: 100%;
+  margin:auto;
+  color:white;
+}
+
+form input[type='textarea']{
+  
+  display: flex;
+  height: 155px;
+  width: 400px;
+  font-size: 18px;
+  margin:10px 0px 15px 0px;
+  
+}
+
+
+#subButton{
+  
+  display: flex;
+  height: 35px;
+  width:80px;
+  margin-top: 10px;
+  color:rgb(13, 18, 40);
+  padding-left: 15px;
+  cursor: pointer;
+  background-color: white;
+  box-shadow: 10px 5px 25px #111;
+  transition: box-shadow  0.5s;
+}
+
+#subButton:hover { 
+
+  cursor: pointer;
+  background-color: rgb(116, 207, 246);
+  box-shadow: 10px 5px 25px #111;
+  transition: box-shadow  0.5s;
+}
+
+#firstColumn, #secondColumn{
+  flex:0 0 15%;
+  padding: 0px;
+}
+
+a:hover, a:visited, a:link, a:active{
+  color: #000;
+}
+
+
+
+input:active, textarea:active{
+  border: 4px solid rgb(42, 106, 152);
+  outline-style: none;
+}
+
+input:hover, textarea:hover{
+  border: 4px solid rgb(42, 106, 152);
+  outline-style: none;
+}
+
+::-webkit-input-placeholder {
+  color:rgb(13, 18, 40);
+  
+}
