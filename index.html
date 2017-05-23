@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="./index.css" >
+  <title>Jacotri77 Dev</title>
+</head>
+<body>
+  <div id="appContainer">
+
+    <div id="headerCont">
+        <h1>Jittery Bastard Dev Shop</h1>
+        <div className="social">    
+          <span class="fa-2x">
+            <a href="https://www.facebook.com/jitterydesigns/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="https://github.com/jacotri77"><i class="fa fa-github" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/erik-jacobsen-a027bb27/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+          </span>
+          </div>
+       </div>
+
+    <div className="interiorDiv">
+    
+        <img src="images/profilejpg.jpg" alt="#" id='interiorDivImg'/>
+        
+        <div
+          id='pictBox'>
+
+          <div 
+            id='boxOne'>
+
+              <img src="images/React-1-0.png" alt="#"/>
+
+          </div>
+
+          <div 
+            id='boxTwo'>
+
+              <img src="images/redux.png" alt="#"/>
+
+          </div>
+
+          <div 
+            id='boxThree'>
+
+              <img src="images/html5-css3-js-logo.png" alt="#"/>
+
+          </div>
+
+          </div>
+          </div>
+
+    <div> 
+      <form onSubmit={this.handleSubmit}>
+       <h1 id="formH">Contact Me</h1>
+       <div id="firstColumn">
+        <label htmlFor="firstname">First Name</label>
+        <input type="text" id="firstname"  name="firstName"  autoComplete="off"/>
+        <label htmlFor="lastname">Last Name</label>
+        <input type="text" id="lastname" name="lastName"  autoComplete="off"/>
+        <label htmlFor="emailaddy">Email Address</label>
+        <input type="Email" id="emailaddy" name="emailAddress"    autoComplete="off"/>
+       </div>
+       <div id="secondColumn">
+        <label htmlFor="comment">Drop Me A Line</label>
+        <input type="textarea" id="comment" name="comments"  autoComplete="off"/>
+        <button type="submit"  id="subButton">Submit</button>
+       </div>
+      </form>
+      
+       </div> 
+
+    </div>
+
+  
+</body>
+</html>
