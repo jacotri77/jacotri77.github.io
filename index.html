@@ -52,20 +52,18 @@
           </div>
 
     <div> 
-      <form onSubmit={this.handleSubmit}>
+      <form action="mail.php" method="POST">
        <h1 id="formH">Contact Me</h1>
        <div id="firstColumn">
-        <label htmlFor="firstname">First Name</label>
-        <input type="text" id="firstname"  name="firstName"  autoComplete="off"/>
-        <label htmlFor="lastname">Last Name</label>
-        <input type="text" id="lastname" name="lastName"  autoComplete="off"/>
-        <label htmlFor="emailaddy">Email Address</label>
-        <input type="Email" id="emailaddy" name="emailAddress"    autoComplete="off"/>
+        <label for="name">Last Name</label>
+        <input type="text" id="lastname" name="Name"  autoComplete="off"/>
+        <label for="emailaddy">Email Address</label>
+        <input type="Email" id="emailaddy" name="emailAddress"   autoComplete="off"/>
        </div>
        <div id="secondColumn">
-        <label htmlFor="comment">Drop Me A Line</label>
+        <label for="comment">Drop Me A Line</label>
         <input type="textarea" id="comment" name="comments"  autoComplete="off"/>
-        <button type="submit"  id="subButton">Submit</button>
+        <input type="submit" value="send"id="subButton">Submit</button>
        </div>
       </form>
       
