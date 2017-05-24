@@ -28,11 +28,13 @@ body{
   margin-left: 5%;
   height: 80px;
   line-height: 100px;
+  font-family: 'Quattrocento Sans', sans-serif;
 }
 
 .fa {
   margin: 0 10px;
   color: white;
+  font-family: 'Quattrocento Sans', sans-serif;
 }
 
 h1{
@@ -45,6 +47,7 @@ h1{
   height:80px;
   width: 63%;
   margin: 20px auto;
+  font-family: 'Quattrocento Sans', sans-serif;
 }
 
 #interiorDivImg{
@@ -116,7 +119,7 @@ form {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
-  height: 450px;
+  height: 300px;
   width: 100%;
   margin: 0px auto 0px auto;
   font-weight: normal;
@@ -130,6 +133,7 @@ form label{
 
   color:white;
   margin-bottom: 0px;
+  font-family: 'Quattrocento Sans', sans-serif;
 }
 
 form input[type='text'], form input[type='email']{
@@ -138,6 +142,7 @@ form input[type='text'], form input[type='email']{
   font-size: 18px;
   width: 400px;
   margin:10px 0px 15px 0px;
+  font-family: 'Quattrocento Sans', sans-serif;
   
 }
 
@@ -156,10 +161,11 @@ form input[type='text'], form input[type='email']{
 form input[type='textarea']{
   
   display: flex;
-  height: 155px;
+  height: 75px;
   width: 400px;
   font-size: 18px;
   margin:10px 0px 15px 0px;
+  font-family: 'Quattrocento Sans', sans-serif;
   
 }
 
@@ -176,15 +182,10 @@ form input[type='textarea']{
   background-color: white;
   box-shadow: 10px 5px 25px #111;
   transition: box-shadow  0.5s;
+  font-family: 'Quattrocento Sans', sans-serif;
 }
 
-#subButton:hover { 
 
-  cursor: pointer;
-  background-color: rgb(116, 207, 246);
-  box-shadow: 10px 5px 25px #111;
-  transition: box-shadow  0.5s;
-}
 
 #firstColumn, #secondColumn{
   flex:0 0 15%;
@@ -195,17 +196,12 @@ a:hover, a:visited, a:link, a:active{
   color: #000;
 }
 
-
-
 input:active, textarea:active{
   border: 4px solid rgb(42, 106, 152);
   outline-style: none;
 }
 
-input:hover, textarea:hover{
-  border: 4px solid rgb(42, 106, 152);
-  outline-style: none;
-}
+
 
 ::-webkit-input-placeholder {
   color:rgb(13, 18, 40);
