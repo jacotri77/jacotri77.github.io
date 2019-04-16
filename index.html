@@ -58,7 +58,7 @@
         $('#subButton').click(function (event) {
             $.axios({
                 method: 'POST',
-                baseURL:'http://192.168.33.10/api/v2/elephant/_table/mail_form',               
+                url:'http://192.168.33.10/api/v2/elephant/_table/mail_form',               
                 data: {
                     name: $('#name').val(),
                     email: $('#email').val(),
