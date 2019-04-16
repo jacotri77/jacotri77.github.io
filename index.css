@@ -2,9 +2,6 @@ html {
   box-sizing: border-box;
 }
 
-{
-  box-sizing: inherit;
-}
 @import url('https://fonts.googleapis.com/css?family=Quattrocento+Sans|Titillium+Web');
 
 body{
