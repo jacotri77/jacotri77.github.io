@@ -164,7 +164,6 @@ form input[type='textarea']{
   
 }
 
-
 #subButton{
   
   display: flex;
@@ -180,8 +179,6 @@ form input[type='textarea']{
   font-family: 'Quattrocento Sans', sans-serif;
 }
 
-
-
 #firstColumn, #secondColumn{
   flex:0 0 15%;
   padding: 0px;
@@ -195,8 +192,6 @@ input:active, textarea:active{
   border: 4px solid rgb(42, 106, 152);
   outline-style: none;
 }
-
-
 
 ::-webkit-input-placeholder {
   color:rgb(13, 18, 40);
