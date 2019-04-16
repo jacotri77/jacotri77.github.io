@@ -8,7 +8,6 @@
 </head>
 <body>
   <div id="appContainer">
-
     <div id="headerCont">
         <h1>Jittery Bastard Dev Shop</h1>
         <div class="social">    
@@ -19,46 +18,29 @@
           </span>
           </div>
        </div>
-
-    <div class="interiorDiv">
-    
+    <div class="interiorDiv">  
         <img src="images/profilejpg.jpg" alt="#" id='interiorDivImg'/>
-        
-        <div
-          id='pictBox'>
-
-          <div 
-            id='boxOne'>
-
+        <div id='pictBox'>
+          <div id='boxOne'>
               <img src="images/React-1-0.png" alt="#"/>
-
           </div>
-
-          <div 
-            id='boxTwo'>
-
+          <div id='boxTwo'>
               <img src="images/redux.png" alt="#"/>
-
           </div>
-
-          <div 
-            id='boxThree'>
-
+          <div id='boxThree'>
               <img src="images/html5-css3-js-logo.png" alt="#"/>
-
           </div>
-
-          </div>
-          </div>
+        </div>
+      </div>
 
     <div> 
       <form action="mail.php" method="POST">
        <h1 id="formH">Contact</h1>
        <div id="firstColumn">
         <label for="name">Name</label>
-        <input type="text" id="lastname" name="name"  autoComplete="off"/>
+        <input type="text" id="name" name="name"  autoComplete="off"/>
         <label for="emailaddy">Email Address</label>
-        <input type="Email" id="emailaddy" name="email" autoComplete="off"/>
+        <input type="Email" id="email" name="email" autoComplete="off"/>
        </div>
        <div id="secondColumn">
         <label for="comment">Drop Me A Line</label>
@@ -66,11 +48,49 @@
         <input type="submit" value="Send" id="subButton" />
        </div>
       </form>
-      
-       </div> 
-
+      </div> 
     </div>
-
   <script src="https://use.fontawesome.com/966e1ac6c8.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+        $('#subButton').click(function (event) {
+            $.ajax({
+                method: 'post',
+                dataType: 'html',
+                url: 'http://192.168.33.10/api/v2/elephant/_table/mail_form',
+
+                data: {
+                    'name': $('#name').val(),
+                    'email': $('#email').val(),
+                    'comment': $('#comment').val(),
+                },
+                success: function (response, textStatus, jqXHR) {
+                    if (response == true) {
+                        $('#result').html('Record successfully saved.');
+                    } else {
+                        $('#result').html(jqXHR.responseText);
+                    }
+                },
+                error: function (jqXHR, textStatus, errorThrown) {
+                    /*
+                     * If the status code of the response is a custom one (420 for example),
+                     * defined by you in php, then the corresponding error message is displayed.
+                     * Otherwise, the displayed message will be a general user-friendly
+                     * one - so that no system-related infos will be shown.
+                     */
+                    var message = (jqXHR.status === 420)
+                            ? jqXHR.statusText
+                            : 'An error occurred during your request. Please try again.';
+
+                    $('#result').html(message);
+                },
+                complete: function (jqXHR, textStatus) {
+                    //...
+                }
+            });
+        });
+    });
+</script>
 </body>
 </html>

@@ -4,7 +4,6 @@ html {
 
 {
   box-sizing: inherit;
-
 }
 @import url('https://fonts.googleapis.com/css?family=Quattrocento+Sans|Titillium+Web');
 
@@ -65,8 +64,6 @@ h1{
 	margin: 20px auto;
   width:90%;
 
-  
-
 }
 
 #pictBox{
@@ -84,7 +81,6 @@ h1{
 	width:1280px;
 	margin:auto;
 }
-
 
 #boxOne, #boxTwo, #boxThree{
 
@@ -109,11 +105,10 @@ h1{
   margin-left: 0px;
 }
 
-#boxThree{
-
+#boxThree {
   margin-right: 0px;
-
 }
+
 form {
   display: flex;
   flex-wrap: wrap;
