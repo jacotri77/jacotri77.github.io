@@ -63,7 +63,11 @@
                     name: $('#name').val(),
                     email: $('#email').val(),
                     comment: $('#comment').val(),
-                }})
+                },
+                headers: {
+                  'Content-Type': 'text/plain;charset=utf-8',
+                }
+              })
                 .then(function (response) {
                     if (response == true) {
                         $('#result').html('Record successfully saved.');
