@@ -58,14 +58,14 @@
         $('#subButton').click(function (event) {
             $.axios({
                 method: 'post',
-                url:'http://192.168.33.10/api/v2/elephant/_table/mail_form',               
+                baseURL:'http://192.168.33.10/api/v2/elephant/_table/mail_form',               
                 data: {
                     name: $('#name').val(),
                     email: $('#email').val(),
                     comment: $('#comment').val(),
                 },
                 headers: {
-                  'Content-Type': 'text/plain;charset=utf-8',
+                  'Content-Type': 'application/x-www-form-urlencoded',
                 }
               })
                 .then(function (response) {
