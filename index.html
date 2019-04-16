@@ -56,23 +56,21 @@
   <script type="text/javascript">
     $(document).ready(function () {
         $('#subButton').click(function (event) {
-            $.axios.post('http://192.168.33.10/api/v2/elephant/_table/mail_form',{                
+            $.axios({
+                method: 'post',
+                url:'http://192.168.33.10/api/v2/elephant/_table/mail_form',               
                 data: {
-                    'name': $('#name').val(),
-                    'email': $('#email').val(),
-                    'comment': $('#comment').val(),
+                    name: $('#name').val(),
+                    email: $('#email').val(),
+                    comment: $('#comment').val(),
                 }})
                 .then(function (response) {
                     if (response == true) {
                         $('#result').html('Record successfully saved.');
                     } else {
-                        $('#result').html(jqXHR.responseText);
-                    }
-                },
-              
-                    //...
-                
-            );
+                        console.log("this didn't work")
+                    };
+                });
         });
     });
 </script>
