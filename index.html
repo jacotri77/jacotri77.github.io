@@ -7,7 +7,29 @@
   <title>Jacotri77 Dev</title>
 </head>
 <body>
-  <div id="appContainer">
+    <div id="app">
+        <form @submit.prevent="submitForm">
+          <div>
+            <label for="name">Name:</label><br>
+            <input id="name" type="text" v-model="name" required/>
+          </div>
+          <div>
+            <label for="email">Email:</label><br>
+            <input id="email" type="email" v-model="email" required/>
+          </div>
+          <div>
+            <label for="comment">Who was the first son on mahtmagandi:</label><br>
+            <textarea id="comment" v-model="comment" required></textarea>
+          </div>
+          <button :class="[name ? activeClass : '']" type="submit">Submit</button>
+          <div>
+            <h3>Data retrieved from server:</h3>
+            <p v-if="success"> {{ success }}</p>
+            <pre>{{ response }}</pre>
+          </div>
+        </form>
+      </div>
+  <!-- <div id="appContainer">
     <div id="headerCont">
         <h1>Jittery Bastard Dev Shop</h1>
         <div class="social">    
@@ -49,15 +71,15 @@
        </div>
       </form>
       </div> 
-    </div>
+    </div> -->
   <script src="https://use.fontawesome.com/966e1ac6c8.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" type="text/javascript"></script>
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-  <script type="text/javascript">
+  <!-- <script type="text/javascript">
     $(document).ready(function () {
         $('#subButton').click(function (event) {
-            $.axios({
-                method: 'POST',
+            $.axios.post({
                 url:'http://192.168.33.10/api/v2/elephant/_table/mail_form',               
                 data: {
                     name: $('#name').val(),
@@ -77,6 +99,6 @@
                 });
         });
     });
-</script>
+</script> -->
 </body>
 </html>
